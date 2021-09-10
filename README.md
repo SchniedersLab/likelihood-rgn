@@ -1,5 +1,5 @@
 # Likelihood Recurrent Geometric Network
-This is the reference (TensorFlow) implementation of Likelihood-Recurrent Geometric Network (Likelihood-RGN). Likelihood-RGN builds on Recurrent Geometric Network (RGN) published by Prof. Mohammed AlQuraishi in 2019 [End-to-end differentiable learning of protein structure](https://www.cell.com/cell-systems/fulltext/S2405-4712(19)30076-6), by incorporating atomic displacement factors into the deep learning network's loss function.
+This is the reference (TensorFlow) implementation of Likelihood-Recurrent Geometric Network. A manuscrip of this work is available on BioRxiv: https://www.biorxiv.org/content/10.1101/2021.09.03.458873v1). All checkpointed models and datasets are available here: https://iowa-my.sharepoint.com/:f:/g/personal/gqi1_uiowa_edu/EkwQUmKpewREj4IvCfXIzfkBy4kLuPtmyIaWAIUH8Tdp5A?e=1MUgwI. Likelihood-RGN builds on Recurrent Geometric Network (RGN) published by Prof. Mohammed AlQuraishi in 2019 [End-to-end differentiable learning of protein structure](https://www.cell.com/cell-systems/fulltext/S2405-4712(19)30076-6), by incorporating atomic displacement factors into the deep learning network's loss function.
 
 ## Installation and requirements
 Extract all files in the [model](https://github.com/mallory-tollefson/rgn) directory in a single location and use `protling.py`, described further below, to train new models and predict structures. Below are the language requirements and package dependencies:
@@ -58,7 +58,7 @@ The first line searches the supplied database for matches to the supplied sequen
 ## Pre-trained models
 Below we make available pre-trained Likelihood-RGN models using the [ProteinNetX](TODO) 12 dataset as checkpointed TF graphs and as raw data.
 
-| [CASP12 X-Ray](TODO) | [CASP12 X-Ray Raw Data](TODO) | [CASP12 X-Ray+NMR](TODO) | [CASP12 X-Ray+NMR Raw Data](TODO) |
+| [CASP12 X-Ray](https://iowa-my.sharepoint.com/:f:/g/personal/gqi1_uiowa_edu/El02wu5TE-hHtHIG74BEFpEB-eokDAKDEXirQuwY6eFTCQ?e=kRjXXq) | [CASP12 X-Ray Raw Data](https://iowa-my.sharepoint.com/:u:/g/personal/gqi1_uiowa_edu/EcbHUDeS061EskTQZ559ZrgB2B8cETdiYQfqpVnrfxAOlQ?e=cinJGb) | [CASP12 X-Ray+NMR](https://iowa-my.sharepoint.com/:f:/g/personal/gqi1_uiowa_edu/EsgIEbshIn9AkzrPs3uw-mgBhwPZcLcvO3DvTJbubfGqfQ?e=ethGZq) | [CASP12 X-Ray+NMR Raw Data](https://iowa-my.sharepoint.com/:u:/g/personal/gqi1_uiowa_edu/EWydoWuMAl9OvshFLOrhSC0BzBLn9ibVjUDVBg5egOervw?e=QBAQgA) |
 | --- | --- | --- | --- |
 
 To train new models from scratch using the same hyperparameter choices as the above models, use the appropriate configuration file from [here](https://github.com/mallory-tollefson/rgn/blob/master/configurations/).
@@ -67,7 +67,7 @@ To train new models from scratch using the same hyperparameter choices as the ab
 The reference Likelihood-RGN implementation is currently only available in TensorFlow, however the [OpenProtein](https://github.com/OpenProtein/openprotein) project implements various aspects of Prof. AlQuraishi's RGN model in PyTorch, and [PyTorch-RGN](https://github.com/conradry/pytorch-rgn) is a work-in-progress implementation of the RGN model.
 
 ## Reference
-To upload when published.
+Our work is available on BioRxiv: https://www.biorxiv.org/content/10.1101/2021.09.03.458873v1
 
 ## Funding
 This material is based upon work supported by the NSF (National Science Foundation) Graduate Research Fellowship under Grant No. 000390183 to Mallory Tollefson. Guowei Qi was supported by the Barry Goldwater Foundation and the Iowa Center for Research by Undergraduates. Prof. Michael Schnieders was supported by NIH R01DK110023, NIH R01DC012049, and NSF CHE-1751688.
